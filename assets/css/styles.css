@@ -1,17 +1,8 @@
 /*PAGINA ROMAN RIGALI - PROYECTO RAYMUNDO FULL SHOP*/
-/*ESTILOS CONTAINER Y BODY*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
-  min-height: 100vh;
   background-image: url(../imagenes/fondobody.png.jpg);
+  background-size: contain;
 }
-
 /*ESTILOS HEADER Y BARRA DE NAVEGACION*/
 .navbar {
   background-image: url(../imagenes/fondobody.png.jpg);
@@ -29,24 +20,61 @@ body {
 
 .navbar a:hover {
   background-image: url(../imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
-  background-size: cover;
+  background-size: contain;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 250ms;
   transition: 250ms;
-  font-weight: 600;
-  
 }
 
 .navbar .navbar-toggler {
-  background-color: rgb(51, 14, 0);
+  background-color: orangered;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer {
+  grid-area: footer;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: black;
+  background-size: contain;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h3 {
+  padding: 15px;
+  font-size: 3rem;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: url(./imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
+  background-size: contain;
+}
+
+footer h4 {
+  font-size: 1rem;
+  color: white;
+  border-bottom: 2px double orangered;
+  margin: 10px;
 }
 
 /*ESTILOS BANNER GRIS CON TITULO*/
 .banner {
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgba(22, 22, 22, 0.877);
   background-attachment: fixed;
 }
 
@@ -110,45 +138,6 @@ main .div-main :hover {
   transition: 2s;
 }
 
-/*ESTILOS DEL FOOTER*/
-footer {
-  grid-area: footer;
-  width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  background-color: rgba(0, 0, 0, 0.418);
-  background-size: contain;
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer h3 {
-  padding: 15px;
-  font-size: 3rem;
-  color: white;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-image: url(../imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
-  background-size: contain;
-}
-
-footer h4 {
-  font-size: 1rem;
-  color: white;
-  border-bottom: 2px double orangered;
-  margin: 10px;
-}
-
 /*ESTILO DE REDES SOCIALES Y POSICIONAMIENTO DE ICONOS*/
 .redes {
   display: inline;
@@ -176,15 +165,15 @@ footer h4 {
 .redes a {
   text-decoration: none;
   font-size: 20px;
-  color: #000000;
+  color: black;
   margin: 10px;
 }
 
 .redes a:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .redes .iconredes {
@@ -193,20 +182,11 @@ footer h4 {
   height: 40px;
 }
 
-.redes .fb {
+.redes .fb, .redes .insta {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background-image: url(../imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
-  border: 2px solid orangered;
-  border-radius: 10px;
-}
-
-.redes .insta {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-image: url(../imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
+  background-image: url(./imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
   border: 2px solid orangered;
   border-radius: 10px;
 }
@@ -265,82 +245,29 @@ footer h4 {
   color: white;
 }
 
-/*PAGINA CONTACTANOS - PAGINA CONTACTANOS - PAGINA CONTACTANOS*/
-.contactanos {
-  border: 2px double black;
-  border-radius: 20px;
-  background-color: rgba(22, 22, 22, 0.877);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 10px;
-  font-size: 2rem;
-  color: white;
-  font-family: 'Bebas Neue', cursive;
-  font-family: 'Ms Madi', cursive;
-  font-family: 'Updock', cursive;
-  -webkit-box-shadow: 4px 4px 10px 4px black;
-          box-shadow: 4px 4px 10px 4px black;
-  position: relative;
-  left: 40%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.formulario {
-  border: 2px double orangered;
-  border-radius: 20px;
-  background-image: url(../imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: auto;
+.form {
+  border: 2px solid orangered;
   padding: 30px;
+  background-image: url(../imagenes/RAYMUNDO.png);
+  background-size: contain;
 }
 
-.formulario label {
-  color: white;
-  border: 0px;
+.form h3 {
+  border: 1px double gray;
   border-radius: 10px;
-  background-color: rgba(22, 22, 22, 0.877);
-  padding: 5px;
-  font-size: 20px;
+  background-image: url(../imagenes/fondobody.png.jpg);
+  color: black;
+  font-weight: 900;
 }
 
-.form-input {
-  background-color: burlywood;
-  padding: 5px;
-  margin: 1px;
-}
-
-.form-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.imagenform {
-  width: 400px;
-  height: auto;
-}
-
-.btn {
-  border: 2px double black;
-  border-radius: 20px;
-  background-color: black;
-  font-size: 20px;
-  padding: 10px;
-  color: white;
-}
-
-.btn :hover {
-  -webkit-box-shadow: 1px 1px 5px 1px rgb(255, 255, 255);
-          box-shadow: 1px 1px 5px 1px rgb(182, 125, 104);
+.form label {
+  font-weight: 600;
+  font-size: 15;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  background-image: url(../imagenes/fondobody.png.jpg);
+  background-size: contain;
+  margin: 10px;
 }
 
 /*PAGINA PRODUCTOS - PRODUCTOS - PRODUCTOS - PRODUCTOS - PRODUCTOS*/
@@ -380,7 +307,7 @@ footer h4 {
   width: auto;
 }
 
-.imagen-article:hover {
+.imagen-article :hover {
   -webkit-transform: scale(1.1) rotate(16deg) translate(-1px, -11px) skew(6deg, -2deg);
   transform: scale(1.1) rotate(16deg) translate(-1px, -11px) skew(6deg, -2deg);
   -webkit-transition: 500ms;
@@ -396,7 +323,7 @@ footer h4 {
 .divDonde {
   border: 2px double orangered;
   border-radius: 20px;
-  background-image: url(../imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
+  background-image: url(./imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
   height: auto;
   -webkit-box-shadow: 4px 4px 10px 4px black;
           box-shadow: 4px 4px 10px 4px black;
@@ -459,4 +386,13 @@ footer h4 {
     margin: 10px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  font-weight: 800;
+  margin: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

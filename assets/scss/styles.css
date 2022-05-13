@@ -1,9 +1,3 @@
-/*PAGINA ROMAN RIGALI - PROYECTO RAYMUNDO FULL SHOP*/
-body {
-  background-image: url(../imagenes/fondobody.png.jpg);
-  background-size: contain;
-}
-
 /*ESTILOS HEADER Y BARRA DE NAVEGACION*/
 .navbar {
   background-image: url(../imagenes/fondobody.png.jpg);
@@ -189,8 +183,6 @@ main .div-main :hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-image: url(./imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
-  border: 2px solid orangered;
-  border-radius: 10px;
 }
 
 .redes .instayfb {

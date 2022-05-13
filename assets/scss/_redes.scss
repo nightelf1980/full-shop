@@ -39,7 +39,6 @@
     .fb {
         display: inline-flex;
         background-image: url(./imagenes/fondo-naranja-textura-marmol-liquido-fondo-marmol_47435-407.jpg);
-        border: 2px solid orangered; border-radius: 10px;
     }
     .insta {
         @extend .fb;
